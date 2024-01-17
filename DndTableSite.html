@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="DndTableSite.css">
+    <title>DND Website Page</title>
+</head>
+<body>
+    <h1>World of Edith Tables Roller</h1>
+    <script src="UncommonMagicItems.js"></script>
+    Uncommon Items: <input type="number" name="Uncommon Items" id="ucI"><br>Uncommon Potions: <input type="number" name="Uncommon Potions" id="ucP"><br>Uncommon Weapons: <input type="number" name="Uncommon Weapons" id="ucW"><br>Uncommon Armor: <input tpye="number" name="Uncommon Armor" id="ucA"><br>
+    <button class="button" type="button" onclick="runUncommon(document.getElementById('ucI').value,document.getElementById('ucP').value,document.getElementById('ucW').value,document.getElementById('ucA').value)">Generate Uncommon Loot</button>
+    <div id='Utitle'></div>
+    <div id="uncommonI"></div>
+    <div id="uncommonP"></div>
+    <div id="uncommonW"></div>
+    <div id="uncommonA"></div>
+
+    <!-- Splitting Uncommon Loot -->
+
+    <script src="RareMagicItems.js"></script>
+    
+    Rare Items: <input type="number" name="Rare Items" id="rI"><br>Rare Potions: <input type="number" name="Rare Potions" id="rP"><br>Rare Weapons: <input type="number" name="Rare Weapons" id="rW"><br>Rare Armor: <input type="number" name="Rare Armor" id="rA"><br>
+    <button class="button" type="button"onclick="runRare(document.getElementById('rI').value,document.getElementById('rP').value,document.getElementById('rW').value,document.getElementById('rA').value)">Generate Rare Loot</button>
+    <div id="Rtitle"></div>
+    <div id="rareI"></div>
+    <div id="rareP"></div>
+    <div id="rareW"></div>
+    <div id="rareA"></div>
+
+    <!-- Splitting Rare Loot -->
+
+</body>
+</html>
